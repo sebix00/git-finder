@@ -1,0 +1,29 @@
+.link-item {
+  /* padding: 1rem 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem; */
+  list-style: none;
+ 
+}
+
+.link:link,
+.link:visited{
+  text-decoration: none;
+  transition: all .2s;
+  cursor: pointer;
+  color:black;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1rem 1rem 0rem rgba(0,0,0,.2);
+
+}
+
+.link:hover,.link:active{
+    transform: scale(1.05);
+    font-weight: bold;
+
+}

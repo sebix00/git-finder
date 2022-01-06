@@ -1,0 +1,25 @@
+.search {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.search input {
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  outline: 0 none;
+  grid-column: 1/-1;
+  min-width: 0;
+}
+/* @media only screen and (max-width: 600px) {
+  .search {
+    grid-template-columns: 1fr;
+  }
+} */
+
+.error-valid {
+  background-color: darkgray;
+  color: red;
+  padding: 1rem;
+}

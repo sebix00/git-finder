@@ -1,0 +1,12 @@
+.wraper {
+    /* width: 90vw; */
+margin:0 auto;
+margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: min-content 1fr;
+  /* justify-items: center; */
+  align-items: center;
+  grid-gap: 30px;
+}
+

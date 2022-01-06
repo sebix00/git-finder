@@ -1,0 +1,9 @@
+.repo{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+.header{
+    text-align: center;
+    margin:2rem 0;
+}

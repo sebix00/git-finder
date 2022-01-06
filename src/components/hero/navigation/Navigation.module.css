@@ -1,0 +1,21 @@
+.navigation{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-item{
+    padding:1rem;
+    transition: all .2s;
+    list-style: none;
+
+}
+.nav-item:hover{
+    transform:scale(1.05);
+    cursor: pointer;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
