@@ -19,3 +19,7 @@
     font-size: 1.6rem;
     font-weight: 700;
 }
+.navigation a.active{
+    padding-bottom: 0.25rem;
+    border-bottom: 4px solid black;
+}
