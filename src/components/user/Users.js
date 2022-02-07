@@ -1,12 +1,7 @@
 import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import User from "./User";
 import UserWraper from "./UserWraper";
-import { inputAction } from "../../store/inputSlice";
-import UserDetails from "./UserDetails";
-import { Routes, Route } from "react-router-dom";
+
 
 const Users = () => {
   const users = useSelector((state) => state.input.users);

@@ -1,6 +1,6 @@
 import { inputAction } from "../../store/inputSlice";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+
 import axios from "axios";
 import classes from "./Search.module.css";
 import { useState } from "react";
@@ -11,7 +11,7 @@ const Search = (props) => {
   //   const userInput = useSelector((state) => state.input.input);
   const [userInput, setUserInput] = useState("");
   const [validIput, setValidInput] = useState(true);
-  const [showClear,setShowClear] = useState(false);
+  const [showClear, setShowClear] = useState(false);
   const dispatch = useDispatch();
 
   async function getUsers(input) {
@@ -24,7 +24,6 @@ const Search = (props) => {
   const userInputHandler = (event) => {
     setUserInput(event.target.value);
     setValidInput(isNotEmpty(event.target.value));
-   
   };
   const searchUserHandler = () => {
     if (!isNotEmpty(userInput)) {
@@ -36,21 +35,27 @@ const Search = (props) => {
     setUserInput("");
     setShowClear(true);
   };
-  const clearUsersHandler = ()=>{
-      dispatch(inputAction.userHandler([]));
-      setShowClear(false);
-  }
+  const clearUsersHandler = () => {
+    dispatch(inputAction.userHandler([]));
+    setShowClear(false);
+  };
 
   return (
     <>
       <div className={classes.search}>
-        <input placeholder="user name..." onChange={userInputHandler} value={userInput}  />
-        <Button classes={classes.btn} onClick={searchUserHandler}>Search user</Button>
-      { showClear&& <Button onClick={clearUsersHandler}>Clear useres</Button>}
+        <input
+          placeholder="user name..."
+          onChange={userInputHandler}
+          value={userInput}
+        />
+        <Button classes={classes.btn} onClick={searchUserHandler}>
+          Search user
+        </Button>
+        {showClear && <Button onClick={clearUsersHandler}>Clear useres</Button>}
       </div>
       {!validIput && (
         <div className={classes["error-valid"]}>
-          <p>Please enter something</p>
+          <p>Please enter a vlaid user name</p>
         </div>
       )}
     </>

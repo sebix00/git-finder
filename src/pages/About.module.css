@@ -1,0 +1,16 @@
+.title{
+    margin-bottom: 1rem;
+    letter-spacing: .7px;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin-bottom: .5rem;
+}
+.item{
+    margin-bottom: .5rem;
+}
+.content{
+    margin-bottom: 1rem;
+}

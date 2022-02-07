@@ -1,0 +1,17 @@
+.title{
+    margin-bottom: 1rem;
+}
+.list{
+    list-style: none;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    width:18rem;
+}
+.dataName{
+    width:35%;
+}
+.dataContent{
+    width:65%;
+}

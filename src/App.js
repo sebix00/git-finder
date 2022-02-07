@@ -7,6 +7,7 @@ import Default from "./pages/Default";
 import Details from "./pages/Details";
 import Navigation from "./components/hero/navigation/Navigation";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Default />} />
         <Route path="/user" element={<Details />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   );
